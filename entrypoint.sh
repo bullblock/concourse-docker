@@ -13,4 +13,6 @@ CONCOURSE_TLS_CERT=${CONCOURSE_TLS_CERT:-/concourse-keys/concourse_cert}
 [ -f $CONCOURSE_TLS_CERT ] && export CONCOURSE_TLS_CERT
 CONCOURSE_TLS_KEY=${CONCOURSE_TLS_KEY:-/concourse-keys/concourse_key}
 [ -f $CONCOURSE_TLS_KEY ] && export CONCOURSE_TLS_KEY
+CONCOURSE_MAIN_TEAM_CONFIG=${CONCOURSE_MAIN_TEAM_CONFIG:-/concourse-keys/web_role_permission}
+[ -f $CONCOURSE_MAIN_TEAM_CONFIG ] && export CONCOURSE_MAIN_TEAM_CONFIG
 exec /usr/local/concourse/bin/concourse $@
