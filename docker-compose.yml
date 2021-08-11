@@ -51,7 +51,7 @@ services:
       CONCOURSE_TSA_HOST: web:2222
       # enable DNS proxy to support Docker's 127.x.x.x DNS server
       CONCOURSE_GARDEN_DNS_PROXY_ENABLE: "true"
-      CONCOURSE_CONTAINERD_DNS_SERVER: "#CONTAINER_DNS#"
+      CONCOURSE_CONTAINERD_DNS_SERVER: "#CONCOURSE_CONTAINER_DNS#"
     logging:
       driver: "json-file"
       options:
